@@ -1,4 +1,4 @@
-#Exercise - Sum 2 digits by its index value, getting the result of the first number, plus the second number from a two digit input number.
+#Exercise - Sum 2 digits by them index value, getting the result of the first number, plus the second number from a two digit input number.
 
 two_digit_number = input("Type a two digit number: ")
 

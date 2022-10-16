@@ -1,0 +1,10 @@
+#Exercise - Body Mass Index Calculator
+
+height = input("enter your height in m: ")
+weight = input("enter your weight in kg: ")
+
+height_flt = float(height) 
+weight_flt = int(weight)
+
+BMI = int(weight_flt / (height_flt**2))
+print(BMI)

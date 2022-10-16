@@ -1,0 +1,26 @@
+"""
+Exercise 3 - Treasure Map
+Your job is to write a program that allows you to mark a square on the map using a two-digit system. 
+The first digit is the vertical location and the second digit is the horizontal location.
+First, your program must take the user input and convert it to a usable format.
+
+Next, you need to use that input to update your nested list with an "x". 
+Remember that your nested list map actually looks like this: 
+[['⬜️', '⬜️', '⬜️'],['⬜️', '⬜️', '⬜️'],['⬜️', '⬜️', '⬜️']].
+"""
+
+
+row1 = ["⬜️","️⬜️","️⬜️"]
+row2 = ["⬜️","⬜️","️⬜️"]
+row3 = ["⬜️️","⬜️️","⬜️️"]
+map = [row1, row2, row3]
+print(f"{row1}\n{row2}\n{row3}")
+position = input("Where do you want to put the treasure? ")
+
+horiz = int(position[0])
+vert = int(position[1])
+
+map[vert-1][horiz-1] = 'X'
+
+print(f"{row1}\n{row2}\n{row3}")
+
